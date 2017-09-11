@@ -4,6 +4,8 @@
     <title>Teresa Lamb</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, user-scalable=0, initial-scale=1">
+    <!-- css reset -->
+    <link rel="stylesheet" type="text/css" href="normalize.css">
     <!-- Latest compiled and minified Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <!-- my css -->
@@ -16,17 +18,17 @@
 <body>
     <div class="container header-container">
         <div class="row header">
-            <div class="col-xs-2 header-logo hover">
+            <div class="col-xs-2 header-logo">
                 <a href="index.html">
-                    <img src="imgs/tl-logo1.svg">
-                    <img src="imgs/tl-logo1.svg">
+                    <img src="imgs/tl-logo1.svg" class="fade-link">
                 </a>
             </div><!--/column-->
             <div class="col-xs-10 right">
                 <nav>
-                    <a href="index.html" class="header-nav-link active">portfolio</a>
-                    <a href="info.html" class="header-nav-link">info</a>
-                    <a href="http://blog.teresaflourlamb.com/" class="header-nav-link">blog</a>
+                    <a href="index.html" class="header-nav-link fade-link">design/development</a>
+                    <a href="index.html" class="header-nav-link fade-link">wearable tech</a>
+                    <a href="about.html" class="header-nav-link fade-link active">about</a>
+                    <!--<a href="http://blog.teresaflourlamb.com/" class="header-nav-link fade-link">blog</a>-->
                 </nav>
             </div><!--/column-->
         </div><!--/row-->
@@ -39,10 +41,9 @@
             </div><!--/column-->
         </div><!--/row-->
         <div class="row portfolio center">
-            <div class="col-md-4 col-sm-6">
-                <a href="nationbuilder.html" class="portfolio-box hover">
-                    <img src="imgs/nationbuilder.png" alt="nationbuilder">
-                    <img src="imgs/nationbuilder.png" alt="nationbuilder">
+            <div class="col-md-4 col-sm-6 portfolio-box">
+                <a href="nationbuilder.html">
+                    <img src="imgs/nationbuilder.png" alt="nationbuilder" id="nationbuilder">
                     <h3>NationBuilder</h3>
                 </a>
                 <p class="portfolio_tag">Web Design &amp; Development</p>
@@ -72,60 +73,40 @@
                 <p class="portfolio_tag">Guest Speaker</p>
             </div><!--/column-->
             <div class="col-md-4 col-sm-6 portfolio-box">
-                <a href="cg221.html" class="hover">
-                    <img src="imgs/cg221.png" alt="cg221">
-                    <img src="imgs/cg221.png" alt="cg221">
-                    <h3>CG221</h3>
-                </a>
-                <p class="portfolio_tag">Web Design &amp; Development</p>
-            </div><!--/column-->
-            <div class="col-md-4 col-sm-6 portfolio-box">
                 <a href="the_knit.html" class="hover">
                     <img src="imgs/knitnet.png" alt="the knit">
                     <img src="imgs/knitnet.png" alt="the knit">
                     <h3>The Knit Net</h3>
                 </a>
-                <p class="portfolio_tag">UX Design &amp; Development</p>
+                <p class="portfolio_tag">UX Design &amp; Web App Development</p>
+            </div><!--/column-->
+            <div class="col-md-4 col-sm-6 portfolio-box">
+                <a href="cg221.html">
+                    <img src="imgs/cg221.png" alt="cg221" id="cg221">
+                    <h3>CG221</h3>
+                </a>
+                <p class="portfolio_tag">Web Design &amp; Development</p>
             </div><!--/column-->
         </div><!--/row-->
-        <div class="row">
-            <div class="col-sm-6">
-                <div class="row">
-                    <div class="col-xs-4 col-sm-2 col-lg-1">
-                        <a href="http://instagram.com/iamteresalamb" class="social hover">
-                            <img src="imgs/instagram.svg" alt="instagram">
-                            <img src="imgs/instagram_hover.svg" alt="instagram">
-                        </a>
-                    </div><!--/column-->
-                    <div class="col-xs-4 col-sm-2 col-lg-1">
-                        <a href="https://github.com/t-lamb" class="social hover">
-                            <img src="imgs/github.svg" alt="github">
-                            <img src="imgs/github_hover.svg" alt="github">
-                        </a>
-                    </div><!--/column-->
-                    <div class="col-xs-4 col-sm-2 col-lg-1">
-                        <a href="http://www.linkedin.com/in/teresaflourlamb" class="social hover">
-                            <img src="imgs/linked.svg" alt="linked in">
-                            <img src="imgs/linked_hover.svg" alt="linked in">
-                        </a>
-                    </div><!--/column-->
-                </div><!--row-->
+        <div class="row footer">
+            <div class="col-sm-6 col-sm-push-6 footer-contact">
+                <p>
+                    Teresa Lamb<br>
+                    Designer &amp; Developer<br>
+                    Hello@iamteresalamb.com<br>
+                    Handmade with &#9825; by Teresa. &copy; 2017.
+                </p>
             </div><!--/column-->
-            <div class="col-sm-6">
-                <div class="row footer-contact">
-                    <div class="col-xs-12">
-                        Teresa Lamb
-                    </div><!--/column-->
-                    <div class="col-xs-12">
-                        Designer, Technologist, Educator, &amp; Crafter
-                    </div><!--/column-->
-                    <div class="col-xs-12">
-                        Hello@iamteresalamb.com
-                    </div><!--/column-->
-                    <div class="col-xs-12">
-                        Handmade with &#9825; by Teresa. &copy; 2017.
-                    </div><!--/column-->
-                </div><!--/row-->
+            <div class="col-sm-6 col-sm-pull-6">
+                <a href="http://instagram.com/iamteresalamb" class="social fade-link">
+                    <img src="imgs/instagram.svg" alt="instagram">
+                </a>
+                <a href="https://github.com/t-lamb" class="social fade-link">
+                    <img src="imgs/github.svg" alt="github">
+                </a>
+                <a href="http://www.linkedin.com/in/teresaflourlamb" class="social fade-link">
+                    <img src="imgs/linked.svg" alt="linked in">
+                </a>
             </div><!--/column-->
         </div><!--/row-->
     </div><!--/container-->

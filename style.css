@@ -1,16 +1,45 @@
 body {
     background-color: #e3edfc;
     font-family: 'Karla', sans-serif;
+    font-size: 1.6rem;
+    color: #000000;
 }
 h1, h2 {
     font-weight: 700;
+    color: #364652;
+}
+p {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
 }
 a {
-    color: #000000;
+    color: #5E798E;
+}
+a:hover {
+    color: #5E798E;
 }
 img {
     max-width: 100%;
 }
+.center {
+    text-align: center;
+}
+.right {
+    text-align: right;
+}
+.title {
+    margin: 6rem 0 7rem;
+}
+.fade-link:hover {
+    text-decoration: none;
+    opacity: 0.5;
+    -webkit-transition: opacity ease-out 0.5s;
+    transition: opacity ease-out 0.5s;
+}
+
+
+/* header */
+
 .header-container {
     width: 100%;
     position: fixed;
@@ -25,19 +54,30 @@ img {
 }
 nav a {
     padding: 1rem;
+    color: #364652;
 }
-.center {
-    text-align: center;
+
+
+/* footer */
+
+.footer {
+    padding-top: 8rem;
+    padding-bottom: 2rem;
 }
-.right {
-    text-align: right;
+.footer-contact {
+    padding-bottom: 1rem;
 }
-.title {
-    margin: 6rem 0 7rem;
+a.social:hover {
+    text-decoration: none;
 }
-.portfolio {
-    /*margin-bottom: 7rem;*/
+.social img{
+    width: 3rem;
+    margin: .5rem 2.5rem 4rem 0;
 }
+
+
+/* portfolio */
+
 .portfolio-box {
     padding-bottom: 7rem;
 }
@@ -53,10 +93,69 @@ nav a {
 .hover:hover img:first-of-type {
   	display: none;
 }
-.social img{
-    width: 3rem;
+@keyframes bounce {
+    0% { top:0px; }
+    50% { top:10px; }
+    100% { top:0px; }
 }
-.footer-contact {
-    /*border-left: 1px solid #eee;*/
-    padding-bottom: 3rem;
+#nationbuilder:hover {
+    position: relative;
+    animation-name: bounce;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(359deg);
+    }
+}
+#cg221:hover {
+    position: relative;
+    animation-name: rotation;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+/* about */
+
+.about-pic {
+    margin: .5rem 0 4rem;
+    width: 400px;
+}
+.bio {
+    padding-bottom: 2rem;
+}
+.about h2 {
+    margin-top: 4rem;
+}
+.about ul {
+    list-style: none;
+    padding: 0;
+}
+.about li {
+    margin: 1.5rem 0;
+}
+.squiggle {
+    height: 2rem;
+}
+
+/* media queries */
+
+@media (max-width: 1200px) {
+    .portfolio-box img {
+        height: 175px;
+    }
+}
+@media (max-width: 992px) {
+    .center-sm {
+        text-align: center;
+    }
+}
+@media (max-width: 776px) {
+    .portfolio-box img {
+        height: 200px;
+    }
 }
