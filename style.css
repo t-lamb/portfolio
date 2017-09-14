@@ -1,161 +1,169 @@
 body {
-    background-color: #e3edfc;
-    font-family: 'Karla', sans-serif;
-    font-size: 1.6rem;
-    color: #000000;
+  /*background-color: #e3edfc;*/
+  font-family: 'Karla', sans-serif;
+  font-size: 1.6rem;
+  color: #000000;
 }
 h1, h2 {
-    font-weight: 700;
-    color: #364652;
+  font-weight: 700;
+  color: #364652;
 }
 p {
-    font-size: 1.8rem;
-    margin-bottom: 2rem;
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
 }
 a {
-    color: #5E798E;
+  color: #5E798E;
 }
 a:hover {
-    color: #5E798E;
+  color: #5E798E;
 }
 img {
-    max-width: 100%;
+  max-width: 100%;
 }
 .center {
-    text-align: center;
+  text-align: center;
 }
 .right {
-    text-align: right;
+  text-align: right;
 }
 .title {
-    margin: 6rem 0 7rem;
+  margin: 9rem 0 7rem;
+  color: #96B4C9;
 }
 .fade-link:hover {
-    text-decoration: none;
-    opacity: 0.5;
-    -webkit-transition: opacity ease-out 0.5s;
-    transition: opacity ease-out 0.5s;
+  text-decoration: none;
+  opacity: 0.5;
+  -webkit-transition: opacity ease-out 0.5s;
+  transition: opacity ease-out 0.5s;
 }
 
 
-/* header */
-
-.header-container {
-    width: 100%;
-    position: fixed;
-    z-index: 5;
+/* navbar */
+.navbar {
+  background-color: #ffffff;
 }
-.header {
-    height: 50px;
-    padding-top: 2rem;
+.logo {
+  width: 3rem;
+  margin-left: 1rem;
 }
-.header-logo img {
-    width: 3rem;
+ul.navbar-right {
+  padding-right: 1rem;
 }
-nav a {
-    padding: 1rem;
-    color: #364652;
+.nav a {
+  color: #364652;
 }
-
+.nav>li>a:focus, .nav>li>a:hover {
+  background-color: transparent;
+}
+.navbar-toggle .icon-bar {
+  background-color: #364652;
+}
+.collapse.in {
+  background-color: #F1F8FB;
+}
 
 /* footer */
-
 .footer {
-    padding-top: 8rem;
-    padding-bottom: 2rem;
+  padding-top: 8rem;
+  padding-bottom: 2rem;
 }
 .footer-contact {
-    padding-bottom: 1rem;
+  padding-bottom: 1rem;
 }
 a.social:hover {
-    text-decoration: none;
+  text-decoration: none;
 }
 .social img{
-    width: 3rem;
-    margin: .5rem 2.5rem 4rem 0;
+  width: 3rem;
+  margin: .5rem 2.5rem 4rem 0;
 }
 
 
 /* portfolio */
-
 .portfolio-box {
-    padding-bottom: 7rem;
+  padding-bottom: 7rem;
 }
 .portfolio-box img {
-    height: 200px;
+  height: 200px;
 }
 .hover img:last-of-type {
-  	display: none;
+  display: none;
 }
 .hover:hover img:last-of-type {
-  	display: inline-block;
+  display: inline-block;
 }
 .hover:hover img:first-of-type {
-  	display: none;
+  display: none;
 }
 @keyframes bounce {
-    0% { top:0px; }
-    50% { top:10px; }
-    100% { top:0px; }
+  0% { top:0px; }
+  50% { top:10px; }
+  100% { top:0px; }
 }
 #nationbuilder:hover {
-    position: relative;
-    animation-name: bounce;
-    animation-duration: 1s;
-    animation-iteration-count: infinite;
+  position: relative;
+  animation-name: bounce;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
 }
 @keyframes rotation {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(359deg);
-    }
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
 }
 #cg221:hover {
-    position: relative;
-    animation-name: rotation;
-    animation-duration: 1s;
-    animation-iteration-count: infinite;
+  position: relative;
+  animation-name: rotation;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
 }
 
 /* about */
-
 .about-pic {
-    margin: .5rem 0 4rem;
-    width: 400px;
+  margin: .5rem 0 4rem;
+  width: 400px;
 }
 .bio {
-    padding-bottom: 2rem;
+  padding-bottom: 2rem;
 }
 .about h2 {
-    margin-top: 4rem;
+  margin-top: 4rem;
 }
 .about ul {
-    list-style: none;
-    padding: 0;
+  list-style: none;
+  padding: 0;
 }
 .about li {
-    margin: 1.5rem 0;
+  margin: 1.5rem 0;
 }
 .squiggle {
-    height: 2rem;
+  height: 2rem;
 }
 
 /* media queries */
-
 @media (max-width: 1200px) {
-    .portfolio-box img {
-        height: 175px;
-    }
+  .portfolio-box img {
+    height: 175px;
+  }
 }
 @media (max-width: 992px) {
-    .center-sm {
-        text-align: center;
-    }
+  .center-sm {
+    text-align: center;
+  }
 }
 @media (max-width: 776px) {
-    .portfolio-box img {
-        height: 200px;
-    }
+  .portfolio-box img {
+    height: 200px;
+  }
+}
+
+.about-body {
+  background-color: #e3edfc;
+}
+.about-body .navbar{
+  background-color: #e3edfc;
 }
