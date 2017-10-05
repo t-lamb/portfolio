@@ -18,6 +18,13 @@
   }
 }
 
+.fade-link:hover {
+  text-decoration: none;
+  opacity: 0.5;
+  -webkit-transition: opacity ease-out 0.5s;
+  transition: opacity ease-out 0.5s;
+}
+
 .img-swap {
   position: relative;
   display: block;
@@ -40,5 +47,10 @@
     img:first-of-type {
       opacity: 0;
     }
+  }
+}
+@media (max-width: 1200px) and (min-width: 768px) {
+  .img-swap {
+    height: 175px;
   }
 }

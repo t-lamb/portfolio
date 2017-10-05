@@ -13,13 +13,8 @@
   @include animation(rotation);
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1200px) and (min-width: 768px) {
   .portfolio-box img {
     height: 175px;
-  }
-}
-@media (max-width: 776px) {
-  .portfolio-box img {
-    height: 200px;
   }
 }

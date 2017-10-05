@@ -35,20 +35,9 @@ ul.rm-list-style {
   list-style: none;
   padding: 0;
 }
-.center {
-  text-align: center;
-}
-.right {
-  text-align: right;
-}
 .title {
   margin: 9rem 0 3rem;
-}
-.fade-link:hover {
-  text-decoration: none;
-  opacity: 0.5;
-  -webkit-transition: opacity ease-out 0.5s;
-  transition: opacity ease-out 0.5s;
+  text-align: center;
 }
 .squiggle {
   height: 2rem;
