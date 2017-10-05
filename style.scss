@@ -3,16 +3,19 @@ $font-weight-normal: 400;
 $body-bg-color: #FFFFFF;
 $text-color: #000000;
 $dark-gray: #364652;
+$dark-blue: #5E798E;
+$med-blue: #6A89A0;
 $light-gray: #F1F8FB;
 
 body {
   font-family: 'Karla', sans-serif;
+  font-size: 1.8rem;
   color: $text-color;
   background-color: $body-bg-color;
 }
 h1 {
   font-weight: $font-weight-bold;
-  color: #5E798E;
+  color: $dark-blue;
 }
 h2, h3 {
   font-weight: $font-weight-bold;
@@ -20,14 +23,10 @@ h2, h3 {
   margin-bottom: 2rem;
 }
 p {
-  font-size: 1.8rem;
   margin-bottom: 2rem;
 }
-a {
-  color: #6A89A0;
-}
-a:hover {
-  color: #6A89A0;
+a, a:hover {
+  color: $med-blue;
 }
 img {
   max-width: 100%;
@@ -36,7 +35,6 @@ ul.rm-list-style {
   list-style: none;
   padding: 0;
 }
-
 .center {
   text-align: center;
 }
