@@ -1,22 +1,31 @@
 body {
-  /*background-color: #e3edfc;*/
   font-family: 'Karla', sans-serif;
   font-size: 1.6rem;
   color: #000000;
 }
-h1, h2 {
+h1 {
+  font-weight: 700;
+  color: #5E798E;
+}
+h2 {
   font-weight: 700;
   color: #364652;
+  margin-bottom: 2rem;
+}
+h3 {
+  font-weight: 700;
+  color: #364652;
+  margin-bottom: 2rem;
 }
 p {
   font-size: 1.8rem;
   margin-bottom: 2rem;
 }
 a {
-  color: #5E798E;
+  color: #6A89A0;
 }
 a:hover {
-  color: #5E798E;
+  color: #6A89A0;
 }
 img {
   max-width: 100%;
@@ -28,14 +37,16 @@ img {
   text-align: right;
 }
 .title {
-  margin: 9rem 0 7rem;
-  color: #96B4C9;
+  margin: 9rem 0 3rem;
 }
 .fade-link:hover {
   text-decoration: none;
   opacity: 0.5;
   -webkit-transition: opacity ease-out 0.5s;
   transition: opacity ease-out 0.5s;
+}
+.squiggle {
+  height: 2rem;
 }
 
 
@@ -82,7 +93,8 @@ a.social:hover {
 
 /* portfolio */
 .portfolio-box {
-  padding-bottom: 7rem;
+  padding-top: 5rem;
+  padding-bottom: 2rem;
 }
 .portfolio-box img {
   height: 200px;
@@ -140,8 +152,23 @@ a.social:hover {
 .about li {
   margin: 1.5rem 0;
 }
-.squiggle {
-  height: 2rem;
+
+/* project page */
+.project .proj-intro {
+  font-size: 25px;
+  line-height: 1.2;
+  color: #364652;
+}
+.project .proj-intro-link {
+  font-size: 25px;
+  line-height: 1.2;
+  display: block;
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+}
+.project .proj-img, .project .proj-video {
+  margin-top: 2rem;
+  margin-bottom: 6rem;
 }
 
 /* media queries */
@@ -159,11 +186,4 @@ a.social:hover {
   .portfolio-box img {
     height: 200px;
   }
-}
-
-.about-body {
-  background-color: #e3edfc;
-}
-.about-body .navbar{
-  background-color: #e3edfc;
 }
