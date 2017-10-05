@@ -1,0 +1,25 @@
+/* portfolio */
+.portfolio-box {
+  padding-top: 5rem;
+  padding-bottom: 2rem;
+  img {
+    height: 200px;
+  }
+}
+#nationbuilder:hover {
+  @include animation(bounce);
+}
+#cg221:hover {
+  @include animation(rotation);
+}
+
+@media (max-width: 1200px) {
+  .portfolio-box img {
+    height: 175px;
+  }
+}
+@media (max-width: 776px) {
+  .portfolio-box img {
+    height: 200px;
+  }
+}

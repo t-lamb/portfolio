@@ -1,0 +1,17 @@
+/* footer */
+.footer {
+  padding-top: 8rem;
+  padding-bottom: 2rem;
+}
+.footer-contact {
+  padding-bottom: 1rem;
+}
+a.social {
+  &:hover {
+    text-decoration: none;
+  }
+  img{
+    width: 3rem;
+    margin: .5rem 2.5rem 4rem 0;
+  }
+}

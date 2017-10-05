@@ -1,0 +1,71 @@
+$font-weight-bold: 700;
+$font-weight-normal: 400;
+$body-bg-color: #FFFFFF;
+$text-color: #000000;
+$dark-gray: #364652;
+$light-gray: #F1F8FB;
+
+body {
+  font-family: 'Karla', sans-serif;
+  color: $text-color;
+  background-color: $body-bg-color;
+}
+h1 {
+  font-weight: $font-weight-bold;
+  color: #5E798E;
+}
+h2, h3 {
+  font-weight: $font-weight-bold;
+  color: $dark-gray;
+  margin-bottom: 2rem;
+}
+p {
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+}
+a {
+  color: #6A89A0;
+}
+a:hover {
+  color: #6A89A0;
+}
+img {
+  max-width: 100%;
+}
+ul.rm-list-style {
+  list-style: none;
+  padding: 0;
+}
+
+.center {
+  text-align: center;
+}
+.right {
+  text-align: right;
+}
+.title {
+  margin: 9rem 0 3rem;
+}
+.fade-link:hover {
+  text-decoration: none;
+  opacity: 0.5;
+  -webkit-transition: opacity ease-out 0.5s;
+  transition: opacity ease-out 0.5s;
+}
+.squiggle {
+  height: 2rem;
+}
+@media (max-width: 992px) {
+  .center-sm {
+    text-align: center;
+  }
+}
+
+@import 'animations';
+@import 'navbar';
+@import 'footer';
+
+/* pages */
+@import 'portfolio';
+@import 'about';
+@import 'project-page';

@@ -1,0 +1,44 @@
+@mixin animation($animation-name) {
+  position: relative;
+  animation-name: $animation-name;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+@keyframes bounce {
+  0% { top:0px; }
+  50% { top:10px; }
+  100% { top:0px; }
+}
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+.img-swap {
+  position: relative;
+  display: block;
+  height: 200px;
+  img {
+    position: absolute;
+    top:0;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transition: opacity ease-in 0.5s;
+    transition: opacity ease-in 0.5s;
+    &:last-of-type {
+      opacity: 0;
+    }
+  }
+  &:hover {
+    img:last-of-type {
+      opacity: 100;
+    }
+    img:first-of-type {
+      opacity: 0;
+    }
+  }
+}

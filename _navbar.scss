@@ -1,0 +1,26 @@
+/* navbar */
+.navbar {
+  background-color: $body-bg-color;
+}
+.navbar-brand {
+  .logo {
+    width: 3rem;
+    margin-left: 1rem;
+  }
+}
+.navbar-right {
+  padding-right: 1rem;
+  li>a {
+    color: $dark-gray;
+    font-size: 1.6rem;
+    &:focus, &:hover {
+      background-color: transparent;
+    }
+  }
+}
+.navbar-toggle .icon-bar {
+  background-color: $dark-gray;
+}
+.collapse.in {
+  background-color: $light-gray;
+}
